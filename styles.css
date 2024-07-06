@@ -1,0 +1,344 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+header .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+header .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+.header-name {
+    font-size: 50px;
+    padding-left: 40px;
+    margin-right: 20px;
+    color: gold;
+}
+
+.header-name a{
+    color: #ff000d;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 100px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.intro-text {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid gold;
+}
+
+.intro-text h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gold;
+    font-size: 30px;
+}
+
+.intro-text .name {
+    font-size: 80px;
+    margin: 0;
+    color: #ed2939;
+    font-style: Arial;
+}
+
+.intro-text .profession {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: gold;
+}
+
+#projects h2{
+    margin-top: 0;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline solid gold 5px;
+}
+
+#projects h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #000000;
+    text-decoration: underline solid gold 3px;
+    font: 30px bolder;
+}
+
+#projects a{
+    color: #800517;
+    font-size: 35px;
+}
+
+#projects{
+    background-color: #BEBEBE;
+}
+
+#projects p{
+    font-size: 20px;
+}
+
+.projects {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    background-color: #c5c6d0;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    width:auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px,0 0 25px #c5c6d0;
+}
+
+.project:hover {
+    background-color: #c5c6d0;
+    box-shadow: 0 0 5px DARKRED,0 0 25px DARKRED,0 0 50px DARKRED, 0 0 100px DARKRED;
+}
+
+#about {
+    background-color: #786f80;
+}
+
+#about h2 {
+    text-align: center;
+    border: 2px solid white ;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+#about h3{
+    text-align: center;
+    text-decoration: underline double 2px gold ;
+    margin-bottom: auto;
+    font-size: 30px;
+}
+
+#about ul {
+    text-align: center;
+    list-style: none;
+    padding: 5px;
+    margin-top: 0;
+}
+
+#about ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#skills {
+    background-color: #2e3135;
+}
+
+#skills h2 {
+    text-align: center;
+    text-decoration: underline #C45AEC 3PX;
+    color: white;
+
+}
+
+#skills h3 {
+    color: white;
+    
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    background-color: #7e7e7e;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 2px solid yellow;
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(90deg, #ff00ff, #2337c6);
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ff00ff; }
+    50% { box-shadow: 0 0 20px #2337c6; }
+    100% { box-shadow: 0 0 5px #ff00ff; }
+}
+
+#contact {
+    background-color: #7d7d7d;
+    text-align: center;
+}
+
+#contact h2{
+    color: #fbfcf6;
+    text-decoration: underline white 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #0504c7;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8f00ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro img {
+        margin: 20px 0 0 0;
+    }
+}

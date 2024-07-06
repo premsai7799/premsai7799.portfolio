@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="header-name">Portfo<a>lio</a>.</div>
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+    <!-- Home Page -->
+    <section id="home">
+        <video autoplay muted loop id="background-video">
+            <source src="homeBackgroung.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Hello.! My Name is</h1>
+                <h2 class="name">Prem Sai</h2>
+                <h3 class="profession">I'm a <span id="profession"></span></h3>
+                <!--<button onclick="window.location.href='#about'">About Me</button> -->
+            </div>
+            <!--<img src="profile.jpg" alt="Your Photo">-->
+        </div> 
+    </section>
+
+    <!-- About Me Page -->
+    <section id="about">
+        <h2>About Me</h2>
+        <!--<img src="about-me.jpg" alt="About Me Photo" class="about-image"> -->
+        <div class="about-text">
+            <p>I'm an Engineer,Engineering is more than just a profession; it is a journey of creativity, problem-solving, and continuous learning. As an engineer passionate about the development field, I find myself at the intersection of innovation and practical application, constantly seeking to improve and create solutions that positively impact society. This passion stems from a deep-seated curiosity about how things work, coupled with a drive to contribute meaningfully to the world around me.
+                My journey into engineering began with a fascination for technology and its potential to transform lives. From a young age, I was captivated by the inner workings of gadgets and machines, often taking them apart just to understand their mechanisms. This curiosity naturally led me to pursue a formal education in engineering, where I could delve deeper into the theoretical foundations and practical applications of technology.
+                During my academic years, I was exposed to various disciplines within engineering, but it was the field of development that truly resonated with me. Development engineering encompasses a wide range of specialties, from civil infrastructure to sustainable energy solutions, each presenting unique challenges and opportunities. What drew me to this field was its potential to address pressing global issues such as climate change, urbanization, and resource scarcity through innovative engineering solutions.
+                <h3>Key Strengths</h3>
+            <ul>
+                <li>Technical Proficiency</li>
+                <li>Problem-Solving Skills</li>
+                <li>Adaptability and Learning Ability</li>
+                <li>Time Management and Prioritization</li>
+                <li>Problem Ownership and Accountability</li>
+                <li>Domain Knowledge</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- My Projects Page -->
+    <section id="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3><a>C</a>ustomer <a>S</a>upport <a>C</a>hatbot 🤖</h3>
+                <p>A customer support chatbot is an AI tool that interacts with users in real-time, using natural language processing to understand and respond to queries. Available 24/7, it provides quick, consistent assistance, handling routine inquiries to streamline customer service operations. This technology enhances efficiency by allowing human agents to focus on more complex issues, ensuring prompt and effective support for customers.</p>
+            </div>
+            <div class="project">
+                <h3><a>P</a>ersonal <a>P</a>ortfolio <a>W</a>ebsite 🖊️</h3>
+                <p>A personal portfolio website showcases your skills, projects, and experiences to potential employers or clients. It serves as a digital resume, highlighting your work in a visually appealing and organized manner. Including sections like About Me, Portfolio, Resume, and Contact information, it offers a glimpse into your expertise and personality. A well-designed portfolio website not only showcases your talents but also demonstrates your professionalism and attention to detail, helping you stand out in your field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills Page -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JAVASCRIPT</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>PYTHON</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MYSQL</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>FIGMA/DESIGNING</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Page -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Email: <a href="mailto:your.email@example.com">premsai7799@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Prem Sai. All rights reserved.</p>
+    </footer>
+
+    <!-- External JS File -->
+    <script src="scripts.js"></script>
+</body>
+</html>
